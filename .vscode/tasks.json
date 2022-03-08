@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "SDL2",
+			"command": "C:\\Users\\sarth\\Desktop\\Dev\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				// "C:\\Users\\sarth\\source\\repos\\Project1\\Project1\\*.cpp",
+				"C:\\Users\\sarth\\Documents\\Graphics\\sdl tut\\src\\main.cpp",
+				"-o",
+				
+				"build\\game.exe",
+				"-IC:/Users/sarth/Desktop/tar ext/SDL2-devel-2.0.20-mingw/SDL2-2.0.20/x86_64-w64-mingw32/include",
+				"-LC:/Users/sarth/Desktop/tar ext/SDL2-devel-2.0.20-mingw/SDL2-2.0.20/x86_64-w64-mingw32/lib",
+				// "-IC:/Users/sarth/Downloads/tee/SDL2_ttf-devel-2.0.18-mingw/SDL2_ttf-2.0.18/x86_64-w64-mingw32/include",
+				// "-LC:/Users/sarth/Downloads/tee/SDL2_ttf-devel-2.0.18-mingw/SDL2_ttf-2.0.18/x86_64-w64-mingw32/lib",
+				"-lmingw32",
+				"-lSDL2main",
+				"-lSDL2",
+				"-lSDL2_image",
+				"-lSDL2_ttf",
+				"-mwindows",
+				"-mconsole",
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
